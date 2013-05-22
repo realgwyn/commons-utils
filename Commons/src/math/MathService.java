@@ -12,6 +12,25 @@ public class MathService {
     */
 
    /**
+    * Rounds down double number to specified decimal lenght
+    * 
+    * @param Double
+    *           input number
+    * @param digitsNumber
+    *           how many decimal places
+    * @return
+    */
+   public static Double round(Double d, double digitsNumber) {
+      if (d != null) {
+         double base = Math.pow(10, digitsNumber);
+         int i = (int) base;
+         return Math.floor(d * i) / i;
+      } else {
+         return null;
+      }
+   }
+
+   /**
     * Computes arithmetic average of array of numbers
     * 
     * @param numberSet

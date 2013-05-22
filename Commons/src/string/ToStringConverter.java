@@ -6,7 +6,7 @@ package string;
  * @author rafcio
  * 
  */
-public class StringConverter {
+public class ToStringConverter {
 
 	public static String toString(Double[] array) {
 		String s = "      [ ";
