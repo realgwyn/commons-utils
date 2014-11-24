@@ -83,14 +83,14 @@ public class DragAndDropDemo extends JFrame {
     slot1.insertDraggableComponent(c1);
 
     JLabel lblImageLabel = new JLabel("Image Label");
-    Image img2 = GraphicsUtils.loadImage("traffic_green.png");
+    Image img2 = GraphicsUtils.loadImage("marble-green.png");
     lblImageLabel.setIcon(new ImageIcon(img2));
     lblImageLabel.setOpaque(false);
     lblImageLabel.setBorder(new LineBorder(SystemColor.textHighlight));
     DraggableComponent c2 = new DraggableComponent(lblImageLabel);
     slot2.insertDraggableComponent(c2);
 
-    Image img3 = GraphicsUtils.loadImage("traffic_red.png");
+    Image img3 = GraphicsUtils.loadImage("marble-red.png");
     ImagePanel imagePanel = new ImagePanel(img3);
     imagePanel.setBackground(SystemColor.textHighlight);
     DraggableComponent c3 = new DraggableComponent(imagePanel);
